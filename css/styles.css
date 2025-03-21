@@ -1,7 +1,8 @@
 body {
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
-    }
+      }
+
 
 a {
     text-decoration: none;
@@ -10,9 +11,18 @@ a {
 /* Header */
 
 .page-start {
-   display: inline-block;
+    padding: 10px 156px ;
+    margin: 0 156px;
+   }
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
 }
 
+
+    
 .header-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -29,12 +39,19 @@ a {
     color: #2e2f42;
 }
 
+.head-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
 
 .head-menu-list {
    
     text-decoration: none;
     list-style-type: none;
-   }
+       }
 
 .head-menu-list>a {
 font-weight: 500;
@@ -56,10 +73,13 @@ font-weight: 500;
     font-style: normal;
     list-style-type: none;,
     text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 42px;
     }
 
 .contact-list {
-          font-style: normal;
+        font-style: normal;
         text-decoration: none;
         }
 
@@ -84,6 +104,9 @@ font-weight: 500;
 .slider-area {
     background-color: #2e2f42;
     text-align: center;
+    padding: 188px 0;
+    height: 600;
+    
 }
 
 .slider-text {
@@ -100,9 +123,14 @@ font-weight: 500;
     background-color: #4d5ae5;
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    padding: 16px 32px;
+   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    margin-top: 48px;
+    border-radius: 4px;
+    border: none;
 }
 
 .slider-button:hover {
@@ -111,19 +139,21 @@ font-weight: 500;
 /* Slider Area Bitti*/
 
 
-
-
-
-
 /*Section 1*/
 
 .first-paragraph {
-    text-align: center;
-    
-   }
+    padding: 120px 0;
+    margin: 0 156px;
+
+}
+
 
 .first-paragraph-list {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0 156px;
+    gap: 24px;
     }
 
 .first-h3 {
@@ -132,7 +162,7 @@ font-weight: 500;
     line-height: 1.20;
     letter-spacing: 0.02em;
     color: #2e2f42;
-}
+   }
 
 .first-paragraph-text {
     font-weight: 400;
@@ -150,42 +180,65 @@ font-weight: 500;
 /*team area*/
 
 .team-area {
-    background-color: #f4f4fd;
-    font-weight: 700;
-        font-size: 36px;
-        line-height: 111%;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #2e2f42;
-}
+    background-color: #f4f4fd;     
+    height: 732px;
+                }
+
+        .team-area .title {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 111%;
+            letter-spacing: 0.02em;
+            text-align: center;
+            color: #2e2f42;
+            margin-bottom: 72px;
+        }
+        
+.team-area-container {
+        
+    
+    padding: 100px 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    box-sizing: border-box;
+   }
 
 .team-area-list {
     list-style-type: none;
+    display: flex;
+       justify-content: space-between;
+    line-height: 1.5;
+   
 }
 
 
 .team-list-name {
     font-weight: 500;
         font-size: 20px;
-        line-height: 120%;
+        line-height: 1.20;
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
+        padding: 0;
 }
 
 .team-list-job {
     font-weight: 400;
         font-size: 16px;
-        line-height: 150%;
+        line-height: 1.5;
         letter-spacing: 0.02em;
         text-align: center;
         color: #434455;
-}
+        }
 
 
 .team-list {
     background-color: #fff;
-}
+    border-radius:0 0 4px 4px;
+    box-shadow: ;
+    padding: 0px 0px 32px 0px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    }
 
 /*team area bitti*/
 
@@ -198,17 +251,31 @@ font-weight: 500;
 
 
 .portfolio-area {
-        font-weight: 700;
+        margin: 0 156px;
+        padding: 120px 0;
+        justify-content: center;
+                }
+
+.portfolio-area .title {
+    font-weight: 700;
         font-size: 36px;
         line-height: 111%;
         letter-spacing: 0.02em;
+        text-align: center;
         color: #2e2f42;
-       
+        margin-bottom: 72px;
+    
 }
+
 
 .portfolio-area-list{
     list-style-type: none;
-    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 0 156px;
+    justify-content: center;
+        
 }
 
 .portfolio-list-name {
@@ -217,6 +284,7 @@ font-weight: 500;
         line-height: 1.20;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        padding: 0 16px;
         
 }
 
@@ -226,7 +294,16 @@ font-weight: 500;
         line-height: 150%;
         letter-spacing: 0.02em;
         color: #434455;
+        padding: 0 16px;
 }
+
+.portfolio-list {
+    background-color: #fff;
+    border: 1px solid #e7e9fc;
+    
+    }
+
+
 
 /*portfolio area bitti*/
 
@@ -238,6 +315,9 @@ font-weight: 500;
 
 .page-finish {
     background-color: #2e2f42;
+    height: 312px;
+    display: flex;
+    align-items: center;
 }
 
 .footer-text {
@@ -246,6 +326,7 @@ font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+       
 }
 
 .footer-logo {
@@ -255,13 +336,18 @@ font-weight: 500;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-bottom: 16px;
+    
 }
 
 .footer-logo-studio {
     color: #f4f4fd;
 }
 
-
+.page-finish .container{
+    margin: 0 156px;
+        
+}
 
 /* Footer Bitti */
 
