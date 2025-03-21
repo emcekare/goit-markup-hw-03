@@ -1,13 +1,17 @@
 body {
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
-}
+    }
 
 a {
     text-decoration: none;
 }
 
 /* Header */
+
+.page-start {
+   display: inline-block;
+}
 
 .header-logo {
     font-family: 'Raleway', sans-serif;
@@ -17,6 +21,7 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    
     
 }
 
@@ -29,7 +34,7 @@ a {
    
     text-decoration: none;
     list-style-type: none;
-}
+   }
 
 .head-menu-list>a {
 font-weight: 500;
@@ -51,7 +56,7 @@ font-weight: 500;
     font-style: normal;
     list-style-type: none;,
     text-decoration: none;
-}
+    }
 
 .contact-list {
           font-style: normal;
@@ -191,17 +196,19 @@ font-weight: 500;
 
 /*Portfolio Area*/
 
+
 .portfolio-area {
         font-weight: 700;
         font-size: 36px;
         line-height: 111%;
         letter-spacing: 0.02em;
-        text-align: center;
         color: #2e2f42;
+       
 }
 
 .portfolio-area-list{
     list-style-type: none;
+    
 }
 
 .portfolio-list-name {
@@ -210,6 +217,7 @@ font-weight: 500;
         line-height: 1.20;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        
 }
 
 .portfolio-list-job {
