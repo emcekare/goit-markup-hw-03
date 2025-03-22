@@ -236,7 +236,6 @@ font-weight: 500;
 .team-list {
     background-color: #fff;
     border-radius:0 0 4px 4px;
-    box-shadow: ;
     padding: 0px 0px 32px 0px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     }
@@ -255,6 +254,10 @@ font-weight: 500;
         margin: 0 156px;
         padding: 120px 0;
                                 }
+
+.portfolio-area .container {
+    margin: 0 auto;
+        }
 
 .portfolio-area .title {
     font-weight: 700;
