@@ -11,14 +11,16 @@ a {
 /* Header */
 
 .page-start {
-    padding: 10px 156px ;
-    margin: 0 156px;
-   }
+    padding: 10px 0 ;
+       }
 
 .header-container {
   display: flex;
+  flex: 1 calc(33.333% - 10px);
   align-items: center;
-  justify-content: space-between;  
+  justify-content: space-between; 
+  margin: 0 450px; 
+  max-width: 1200px;
 }
 
 
@@ -42,8 +44,9 @@ a {
 .head-menu{
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 40px;
+    margin-right: 250px;
+
 }
 
 
@@ -81,13 +84,13 @@ font-weight: 500;
 .contact-list {
         font-style: normal;
         text-decoration: none;
+        
         }
 
 .contact-list>a {
     font-size: 16px;
     letter-spacing: 0.02em;
-    color: #2e2f42;
-       
+    color: #434455;
 
 }
 
@@ -253,8 +256,7 @@ font-weight: 500;
 .portfolio-area {
         margin: 0 156px;
         padding: 120px 0;
-        justify-content: center;
-                }
+                                }
 
 .portfolio-area .title {
     font-weight: 700;
@@ -271,10 +273,12 @@ font-weight: 500;
 .portfolio-area-list{
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    margin: 0 156px;
-    justify-content: center;
+        flex-wrap: wrap;
+        flex: 1 1 calc(33.333% - 10px);
+        padding: 20px;
+        gap: 24px;
+        margin: 0 156px;
+        justify-content: center;
         
 }
 
@@ -345,7 +349,7 @@ font-weight: 500;
 }
 
 .page-finish .container{
-    margin: 0 156px;
+    margin: 0 450px;
         
 }
 
