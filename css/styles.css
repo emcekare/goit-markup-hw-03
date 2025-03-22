@@ -16,11 +16,11 @@ a {
 
 .header-container {
   display: flex;
-  flex: 1 calc(33.333% - 10px);
   align-items: center;
   justify-content: space-between; 
-  margin: 0 450px; 
+  margin: 0 auto; 
   max-width: 1200px;
+  padding: 0 20px;
 }
 
 
@@ -45,8 +45,6 @@ a {
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-right: 250px;
-
 }
 
 
@@ -74,7 +72,7 @@ font-weight: 500;
 
 .head-contact {
     font-style: normal;
-    list-style-type: none;,
+    list-style-type: none;
     text-decoration: none;
     display: flex;
     justify-content: flex-end;
@@ -108,7 +106,7 @@ font-weight: 500;
     background-color: #2e2f42;
     text-align: center;
     padding: 188px 0;
-    height: 600;
+   
     
 }
 
