@@ -262,9 +262,8 @@ font-weight: 500;
                                 }
 
 .portfolio-area .container {
-    margin: 0 auto;
-    
-        }
+   
+           }
 
 .portfolio-area .title {
     font-weight: 700;
@@ -282,11 +281,11 @@ font-weight: 500;
     list-style-type: none;
     display: flex;
         flex-wrap: wrap;
-        flex: 1 1 calc(33.333% - 10px)/3;
+        
+        
         padding: 20px;
+        text-align: center;
         gap: 24px;
-        margin: 0 156px;
-        justify-content: center;
         
 }
 
@@ -312,7 +311,8 @@ font-weight: 500;
 .portfolio-list {
     background-color: #fff;
     border: 1px solid #e7e9fc;
-    
+    max-width: calc(33.333% - 10px);
+flex: 1 1 calc(33.333% - 48px)/3;
     }
 
 
