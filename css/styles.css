@@ -6,24 +6,55 @@ body {
     min-height: 100vh;
       }
 
+* {
+      box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
 
 a {
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 1158px;
+    }
+
 
 /* Header */
 
-.page-start {
-    padding: 10px 0 ;
-       }
-
-.header-container {
+.page-start .container {
   display: flex;
-  align-items: center;
   justify-content: space-between; 
-  margin: 0 auto; 
-  max-width: 1200px;
-  padding: 0 20px;
+  align-items: center; 
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e7e9fc;
+  
 }
 
 
@@ -46,18 +77,11 @@ a {
 
 .head-menu{
     display: flex;
-    align-items: left;
     gap: 40px;
+    
    
 
 }
-
-
-.head-menu-list {
-   
-    text-decoration: none;
-    list-style-type: none;
-       }
 
 .head-menu-list>a {
 font-weight: 500;
@@ -77,8 +101,8 @@ font-weight: 500;
 
 .head-contact {
     font-style: normal;
-    list-style-type: none;
-    text-decoration: none;
+   
+   
     display: flex;
     justify-content: flex-end;
     gap: 40px;
@@ -147,19 +171,21 @@ font-weight: 500;
 
 /*Section 1*/
 
-.first-paragraph {
-    padding: 120px 0;
-    margin: 0 156px;
 
-}
+
+.first-paragraph .container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    }
 
 
 .first-paragraph-list {
     list-style: none;
-    display: flex;
+display: flex;
     justify-content: center;
-    margin: 0 156px;
     gap: 24px;
+    
+   
     }
 
 .first-h3 {
@@ -176,7 +202,9 @@ font-weight: 500;
     line-height: 1.50;
     letter-spacing: 0.02em;
     color: #434455;
-}
+    padding-top: 8px;
+    }
+
 /*section 1 bitti*/
 
 
@@ -186,9 +214,8 @@ font-weight: 500;
 /*team area*/
 
 .team-area {
-    background-color: #f4f4fd;     
-    height: 732px;
-                }
+    background-color: #f4f4fd;
+     }
 
         .team-area .title {
             font-weight: 700;
@@ -200,13 +227,11 @@ font-weight: 500;
             margin-bottom: 72px;
         }
         
-.team-area-container {
-        
-    
-    padding: 100px 0;
+.team-area .container {
+    padding: 120px 0;
     margin: 0 auto;
-    max-width: 1200px;
-    box-sizing: border-box;
+    
+    
    }
 
 .team-area-list {
@@ -226,7 +251,7 @@ font-weight: 500;
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
-        padding: 0;
+        padding-top: 32px;
 }
 
 .team-list-job {
@@ -236,6 +261,7 @@ font-weight: 500;
         letter-spacing: 0.02em;
         text-align: center;
         color: #434455;
+        padding-top: 8px;
         }
 
 
@@ -256,36 +282,35 @@ font-weight: 500;
 /*Portfolio Area*/
 
 
-.portfolio-area {
-        margin: 0 156px;
-        padding: 120px 0;
-                                }
+
 
 .portfolio-area .container {
-   
+padding-top: 120px;
+text-align: center;
+
+    
            }
 
 .portfolio-area .title {
-    font-weight: 700;
+       font-weight: 700;
         font-size: 36px;
         line-height: 111%;
         letter-spacing: 0.02em;
-        text-align: center;
+        
         color: #2e2f42;
         margin-bottom: 72px;
+         
     
 }
 
 
 .portfolio-area-list{
     list-style-type: none;
-    display: flex;
-        flex-wrap: wrap;
-        
-        
-        padding: 20px;
-        text-align: center;
-        gap: 24px;
+    display: flex;   
+    flex-wrap: wrap;   
+    justify-content: center;  
+    flex: 1 1 calc(33.333% - 10px);   
+    gap: 24px;
         
 }
 
@@ -295,24 +320,26 @@ font-weight: 500;
         line-height: 1.20;
         letter-spacing: 0.02em;
         color: #2e2f42;
-        padding: 0 16px;
+        padding-top: 32px;
+        text-align: left;
         
 }
 
 .portfolio-list-job {
     font-weight: 400;
         font-size: 16px;
-        line-height: 150%;
+        line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
-        padding: 0 16px;
+        padding-top: 8px;
+        padding-bottom: 32px;
+        text-align: left;
 }
 
 .portfolio-list {
     background-color: #fff;
-    border: 1px solid #e7e9fc;
-    max-width: calc(33.333% - 10px);
-flex: 1 1 calc(33.333% - 48px)/3;
+    border-bottom:1px solid #e7e9fc;
+   
     }
 
 
@@ -326,18 +353,23 @@ flex: 1 1 calc(33.333% - 48px)/3;
 /* Footer */
 
 .page-finish {
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-color: #2e2f42;
-    height: 312px;
     display: flex;
-    align-items: center;
+
+
+
 }
 
 .footer-text {
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    padding-top: 16px ;
        
 }
 
@@ -348,7 +380,7 @@ flex: 1 1 calc(33.333% - 48px)/3;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-bottom: 16px;
+    
     
 }
 
@@ -356,10 +388,7 @@ flex: 1 1 calc(33.333% - 48px)/3;
     color: #f4f4fd;
 }
 
-.page-finish .container{
-    margin: 0 450px;
-        
-}
+
 
 /* Footer Bitti */
 
